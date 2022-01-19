@@ -1,8 +1,8 @@
 import random
 
 # create a python game using conditional statements.(User input)
-
-while True:
+request = input('What to play a game ? (n/y) ').lower()
+while request == 'y':
     userInput = int(input('please enter any number between 1 - 10: '))
     randomInt = random.randint(1, 10)
     # print(randomInt)
@@ -33,7 +33,8 @@ while True:
     else:
         print('Thank you for playing with us.\n')
         break
-
+print('See You Later')
+print('----------------------------------------------------------')
 
 # Create a pyramid object pattern using multiple numbers
 n = 5
@@ -48,10 +49,6 @@ while n != 0:
     while v > 0:
         print(random.randint(1, 9), end='')
         v -= 1
-
-
-
-    # print(str(random.randint(1, 9)) * (x + (1 + (5 - n))), end='')
     print()
     n -= 1
     x += 1
