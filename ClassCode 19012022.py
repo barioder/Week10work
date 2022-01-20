@@ -1,5 +1,5 @@
 import random
-# create a function to find
+# create a function to find mean
 n = 5
 evenNumbers = []
 notEven = []
